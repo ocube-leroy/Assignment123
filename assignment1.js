@@ -1,10 +1,6 @@
-function taskOne(number1){
-
-	var number1 = 5;
-	var total1;
-	total1 = number1 * 2;
-
-	return total1;
+function taskOne (number1) {
+	return number1 * 2;
 }
+const total1 = taskOne(5);
 
 console.log(total1);

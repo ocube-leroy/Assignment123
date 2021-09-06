@@ -1,10 +1,8 @@
 function taskTwo(number2, number3){
-	var number2 = 7;
-	var number3 = 14;
-	var total2;
-	total2 = number2 + number3;
+	
+	return number2 + number3;
 
-	return total2;
 }
+const numero2 = taskTwo(7, 14);
 
-console.log(total2);
+console.log(numero2);
