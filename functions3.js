@@ -1,3 +1,9 @@
+/*
+FUNCTION TASK3: ------------------
+Write a function that accepts three number arguments, 
+finds the smallest number between the first and second argument and subtracts it from the bigger one.
+The function should then add/sum that difference to the third argument..and then logs the sum.
+*/
 function taskThree(a, b, c) {
 
 	if (a < b && b < c) {
