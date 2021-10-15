@@ -4,7 +4,7 @@ number between the sum of all even numbers between 0 and N(0 and N inclusive)
 and the sum of all odd numbers(0 and N inclusive) between 0 and N.
  */
 
-function sumEvenOdd(N) {
+function smallestSum(N) {
     var sumEven = 0;
     var sumOdd = 0;
     for (let index = 0; index <= N; index++) {
@@ -18,6 +18,6 @@ function sumEvenOdd(N) {
     }
     return (Math.min(sumEven, sumOdd));
 }
-sumEvenOdd(19);
+smallestSum(19);
     
     
