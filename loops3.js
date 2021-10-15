@@ -4,24 +4,20 @@ number between the sum of all even numbers between 0 and N(0 and N inclusive)
 and the sum of all odd numbers(0 and N inclusive) between 0 and N.
  */
 
-var sumEven = 0;
-var sumOdd = 0;
-    for (let index = 0; index <= 19; index++) {
+function sumEvenOdd(N) {
+    var sumEven = 0;
+    var sumOdd = 0;
+    for (let index = 0; index <= N; index++) {
         
-        if (index % 2 === 0) 
-        {
-            sumEven += index; 
-         }
-        else 
-        {
+        if (index % 2 === 0) {
+            sumEven += index;
+        } else {
             sumOdd += index;
         }
-    
         
-        }
-        console.log(sumEven);
-        console.log(sumOdd);
-        console.log(Math.min(sumEven, sumOdd));
-        
+    }
+    return (Math.min(sumEven, sumOdd));
+}
+sumEvenOdd(19);
     
     
