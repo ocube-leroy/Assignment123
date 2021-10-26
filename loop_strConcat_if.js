@@ -12,7 +12,7 @@ Also the text should end with a fullstop not a comma.
  let i = 0;
  
  
- for (i = 0; i <= strArray.length; i++) {
+ for (i = 1; i <= strArray.length; i++) {
 
     let item = strArray[i];
 
