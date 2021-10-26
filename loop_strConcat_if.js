@@ -12,19 +12,20 @@ Also the text should end with a fullstop not a comma.
  let i = 0;
  
  
- for (i = 1; i <= strArray.length; i++) {
+ for (i = 0; i <= strArray.length; i++) {
 
     let item = strArray[i];
+    let number = i + 1;
 
      if (i < strArray.length-1) {
          
-      loggedStrArray += i + '-' + item  + ', ';
+      loggedStrArray += number + '-' + item  + ', ';
       
  
      }
      
      else if (i == strArray.length-1) {
-         loggedStrArray += i + '-' + item + '.';
+         loggedStrArray += number + '-' + item + '.';
      }
      
  
