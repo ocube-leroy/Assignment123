@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+.gtbContainer, .header, .footer, .productsRow, .row, .logIn, .aside, .topLogo {
+    display: block;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.gtbContainer {
+    max-width: 70%;
+    width: auto;
+    margin: auto;
+    
+}
+
+
+.topLogo {
+    background-color: white;
+    margin-bottom: 20px;
+    right: auto;
+    float: right;
+    
+}
+
+.header {
+    border: 2px solid #E2E2E2;
+    background-color: #E2E2E2;
+    padding: 8px;
+    clear: both;
+    
+
+}
+
+.row {
+    margin-top: 20px;
+    
+}
+
+
+.logIn {
+    
+    border: 1px solid #C5C5C5;
+    max-width: 70%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 7px;
+    background-color: whitesmoke;
+    float: left;
+    left: auto;
+    
+
+}
+    
+    
+p > span {
+    color: #D94F00;
+}
+    
+label, input, input[type=checkbox], a, .gridHolder, .gridChild {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+    
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.colorID > span {
+    font-weight: bold;
+    color: #666666;
+    width: 100px;
+    float: left;
+    padding-top: 8px;
+    padding-left: 150px;
+}
+
+h4, .logIn > p {
+    text-align: center;
+}
+
+    
+input[type=text], input[type=password] {
+    width: 38%;
+    margin: 8px 0;
+    padding: 10px 10px;
+    
+    box-sizing: border-box;
+    border: 1px solid #C5C5C5;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+    
+input[type=checkbox] {
+    margin-top: 20px;
+}
+    
+.gridHolder {
+    display: grid;
+    grid-template-rows: repeat(3, 35px);
+    grid-template-columns: repeat(5, 35px);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 145px;
+    
+    
+}
+    
+.gridChild {
+    display: grid;
+    text-align: center;
+    background-color: #CCCCCC;
+    padding: 8px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    
+    
+        
+    
+}
+    
+.child3 {
+    border-radius: 5px;
+    
+}
+    
+.child7 {
+    border-radius: 5px;
+}
+    
+.child0 {
+    border-radius: 5px;
+}
+    
+.childClr {
+    border-radius: 5px;
+    background-color: #D94F00;
+    color: white;
+    
+}
+    
+.childSpan {
+    grid-column: 5;
+    grid-row: 1 / span 3;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+    
+.child1 {
+    border-radius: 5px;
+}
+    
+.child5 {
+    border-radius: 5px;
+}
+    
+.child8 {
+    border-radius: 5px;
+}
+    
+.childDel {
+    border-radius: 5px;
+    background-color: #D94F00;
+    color: white;
+}
+    
+.child6 {
+    border-radius: 5px;
+}
+    
+.child4 {
+    border-radius: 5px;
+}
+    
+.child9 {
+    border-radius: 5px;
+}
+    
+.child2 {
+    border-radius: 5px;
+}
+   
+.logInContainer  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin-left: 275px;
+}
+
+.logInContainer  a:hover {
+    color: #D94F00;
+    text-decoration: underline;
+}
+.aside {
+    width: 25%;
+    border-radius: 8px;
+    border: 1px solid #C5C5C5;
+    margin: 10px;
+    float: right;
+    
+    
+}
+
+input[type=text], input[type=password] {
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input[type=image] {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+input[type=checkbox], .checkboxRem > span {
+    margin-left: 175px;
+}
+
+.product1, .product2, .product3 {
+    float: left;
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    width: 196px;
+    padding: 10px;
+    height: 196px;
+    margin: 10px;
+    background-color: whitesmoke;
+    font-size: 12px;
+    line-height: 15px;
+    
+    
+}
+
+.product1 > a, .product2 > a, .product3 > a {
+    border: 1px solid #666666;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #666666;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.footer {
+    border: 1px solid #D94F00;
+    background-color: #D94F00;
+    width: 95%;
+    color: white;
+    padding: 10px;
+    clear: both;
+    margin: 20px;
+    padding-left: 489px;
+
+    
+    
+    
+}
+
+.footer > a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+        
+}
+
+.footer > a:hover {
+    text-decoration: underline;
+}

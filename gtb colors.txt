@@ -1,0 +1,19 @@
+#666666    grey
+#FFFFFF    white
+#999999
+#F6F6F6
+#EDEDED
+#C5C5C5
+#CCCCCC
+#EBEBEB
+#555555
+#F0F0F0
+#555555
+#CCCCCC
+#FF4500   orange
+#D94F00   dark orange
+#e81717   an orange
+#FF4500   light orange
+#333333
+#EFEFEF
+#E2E2E2
