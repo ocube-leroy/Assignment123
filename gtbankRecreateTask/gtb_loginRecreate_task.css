@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-.gtbContainer, .header, .footer, .productsRow, .row, .logIn, .aside, .topLogo {
+.gtbContainer, .header-wrapper, .footer, .productsRow, .row, .logIn, .aside, .topLogo {
     display: block;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .gtbContainer {
-    max-width: 70%;
+    max-width: 85%;
     width: auto;
     margin: auto;
     
@@ -23,14 +23,15 @@
     
 }
 
-.header {
-    border: 2px solid #E2E2E2;
-    background-color: #E2E2E2;
+.header-wrapper {
+    border: 2px solid #ccc;
+    background-color: #ccc;
     padding: 8px;
     clear: both;
-    
-
 }
+
+
+
 
 .row {
     margin-top: 20px;
@@ -41,11 +42,11 @@
 .logIn {
     
     border: 1px solid #C5C5C5;
-    max-width: 70%;
+    max-width: 55%;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     border-radius: 10px;
     padding: 10px;
-    margin: 7px;
+    margin: 10px 10px 10px 20px;
     background-color: whitesmoke;
     float: left;
     left: auto;
@@ -198,7 +199,7 @@ input[type=checkbox] {
     display: block;
     justify-content: center;
     align-content: center;
-    margin-left: 275px;
+    margin-left: 255px;
 }
 
 .logInContainer  a:hover {
@@ -206,7 +207,7 @@ input[type=checkbox] {
     text-decoration: underline;
 }
 .aside {
-    width: 25%;
+    max-width: 45%;
     border-radius: 8px;
     border: 1px solid #C5C5C5;
     margin: 10px;
@@ -230,7 +231,7 @@ input[type=image] {
     margin-right: auto;
 } 
 
-input[type=checkbox], .checkboxRem > span {
+input[type=checkbox] {
     margin-left: 175px;
 }
 
@@ -241,9 +242,9 @@ input[type=checkbox], .checkboxRem > span {
     width: 196px;
     padding: 10px;
     height: 196px;
-    margin: 10px;
+    margin: 0px 5px 20px 20px;
     background-color: whitesmoke;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     
     
@@ -258,6 +259,7 @@ input[type=checkbox], .checkboxRem > span {
     margin: 10px;
     text-decoration: none;
     font-size: 12px;
+    
 }
 
 
@@ -278,7 +280,7 @@ input[type=checkbox], .checkboxRem > span {
     padding: 10px;
     clear: both;
     margin: 20px;
-    padding-left: 489px;
+    padding-left: 660px;
 
     
     
