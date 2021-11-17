@@ -8,7 +8,7 @@
 }
 
 .gtbContainer {
-    max-width: 85%;
+    max-width: 75%;
     width: auto;
     margin: auto;
     
@@ -24,7 +24,7 @@
 }
 
 .header-wrapper {
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     background-color: #ccc;
     padding: 8px;
     clear: both;
@@ -42,10 +42,10 @@
 .logIn {
     
     border: 1px solid #C5C5C5;
-    max-width: 55%;
+    max-width: 64%;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 10px 10px 20px;
     background-color: whitesmoke;
     float: left;
@@ -111,6 +111,7 @@ input[type=checkbox] {
     justify-content: center;
     align-content: center;
     margin-left: 145px;
+    font-weight: bold;
     
     
 }
@@ -210,6 +211,7 @@ input[type=checkbox] {
     max-width: 45%;
     border-radius: 8px;
     border: 1px solid #C5C5C5;
+    box-shadow: 0px 5px #CCCCCC;
     margin: 10px;
     float: right;
     
@@ -280,7 +282,7 @@ input[type=checkbox] {
     padding: 10px;
     clear: both;
     margin: 20px;
-    padding-left: 660px;
+    padding-left: 550px;
 
     
     
