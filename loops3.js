@@ -18,6 +18,5 @@ function smallestSum(n) {
     }
     return (Math.min(sumEven, sumOdd));
 }
+
 smallestSum(19);
-    
-    

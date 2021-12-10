@@ -29,24 +29,26 @@
                 <h4>Online Realtime Balances and Transactions</h4>
                 <p>Kindly Login with any of <span><b>UserID, Account Number, Phone Number or Email</b></span> and use the keypad for your password.
 	            <div class="logInContainer">
-		            <form name="gtTest" action="" method="">
-			            <label class="colorID" for="userId"><span>UserId: </span><input type="text" name="userId" id="userId"></label>
-			            <label class="colorID" for="pass1"><span>Password: </span><input type="password" name="pass1" id="pass1"></label>
-			            <div class="gridHolder">
-				            <button class="gridChild child3">3</button>
-				            <button class="gridChild child7">7</button>
-				            <button class="gridChild child0">0</button>
-				            <button class="gridChild childClr">CLR</button>
-				            <button class="gridChild childSpan">Login</button>
-				            <button class="gridChild child1">1</button>
-				            <button class="gridChild child5">5</button>
-				            <button class="gridChild child8">8</button>
-				            <button class="gridChild childDel">DEL</button>
-				            <button class="gridChild child6">6</button>
-				            <button class="gridChild child4">4</button>
-				            <button class="gridChild child9">9</button>
-				            <button class="gridChild child2">2</button>
+		            <form name="gtForm" id="gtTest" action="gtbankRecreateTask/success.html" method="" onsubmit="keyboardDisable(event);">
+			            <label class="colorID" for="userId"><span>UserId: </span><input type="text" name="username1" id="userId"></label>
+			            <label class="colorID" for="pass1"><span>Password: </span><input type="text" name="password1" id="pass1" onkeydown="keyboardDisable(event);"></label>
+			            
+                        <div class="gridHolder">
+				            <button class="gridChild child3" onclick="numPad('button3');" id="button3">3</button>
+				            <button class="gridChild child7" onclick="numPad('button7');" id="button7">7</button>
+				            <button class="gridChild child0" onclick="numPad('button0');" id="button0">0</button>
+				            <button class="gridChild childClr" onclick="myClr()">CLR</button>
+				            <button class="gridChild childSpan" type=submit onclick="checkUsername(), checkPassword(), enterUserPass();" id="buttonLogin">Login</button>
+				            <button class="gridChild child1" onclick="numPad('button1');" id="button1">1</button>
+				            <button class="gridChild child5" onclick="numPad('button5');" id="button5">5</button>
+				            <button class="gridChild child8" onclick="numPad('button8');" id="button8">8</button>
+				            <button class="gridChild childDel" onclick="delPad('buttonDel');" id="buttonDel">DEL</button>
+				            <button class="gridChild child6" onclick="numPad('button6');" id="button6">6</button>
+				            <button class="gridChild child4" onclick="numPad('button4');" id="button4">4</button>
+				            <button class="gridChild child9" onclick="numPad('button9');" id="button9">9</button>
+				            <button class="gridChild child2" onclick="numPad('button2');" id="button2">2</button>
 			            </div>
+
 			        <a href="">Forgot your password/UserID?</a>
 			        <a href="">Forgot your secret question?</a>
 			        <a href="/register.html"><img src="gtImages/Register2.png" alt="Register"></a><br>
@@ -76,8 +78,7 @@
 
                 </div>
 
-            </div>
-
+            </div> 
             <div class="row2">
 
                 <div class="col-3 product1">
@@ -130,6 +131,8 @@
         </div>
 
     </div>
+
+    <script src="gtb_loginRecreate_task.js"></script>
 
 </body>
 </html>
