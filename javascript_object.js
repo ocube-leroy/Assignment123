@@ -32,53 +32,104 @@ new sum will still be correct. Use console.log() to log the sum too)? */
 const person = {
     name: "Buhari", 
     gender: "male", 
-    politicalStatus: "President", 
+    isPresident: true, 
     age: 70, 
     cars: ["Bentley", "Benz", "Lamborgini"],
-    wife: {nameWife: "Aisha", ageWife: 60, genderWife: "female", politicalStatusOfWife: "not a President"},
+    wife: {name: "Aisha", age: 60, gender: "female", isPresident: false},
     children: {
-        first: {name1: "Goke", age1: 35, gender1: "male"},
-        second: {name2: "Sandra", age2: 30, gender2: "female"},
-        third: {name3: "Mudi", age3: 25, gender3: "male"}//
+        first: {name: "Goke", age: 35, gender: "male"},
+        second: {name: "Sandra", age: 30, gender: "female"},
+        third: {name: "Mudi", age: 25, gender: "male"}
+    },
+    
+
+    getMyName: function(){
+        return "My name is " + this.name + " and my gender is " + this.gender + ".";
     },
 
-    wifeName: function(){
-        return "My wife's name is " + this.wife.nameWife + " " + this.name;
+    getMyPoliticalStatus: function(){
+        let isPresident = 0;
+        if (isPresident == true) {
+            return "I am a President.";
+        }
     },
 
-    wifeAge: function(){
-        return "My wife is " + this.wife.ageWife + " " + "years old" + " , " + this.wife.genderWife;
+    getMyAge: function(){
+        return "I am " + this.age + " years old.";
     },
 
-    coupleAgeDifference: function(age, ageWife){
+    getMyCars: function(){
+        return "I have a " + this.cars[0] +  ", a " + this.cars[1] + ", and a " + this.cars[2] + ".";
+    },
+
+    getWifeName: function(){
+        return "My wife's name is " + this.wife.name + " " + this.name + ".";
+    },
+
+    getWifeAge: function(){
+        return "My wife is " + this.wife.age + " " + "years old" + " and a " + this.wife.gender + ".";
+    },
+
+    getMyWifePoliticalStatus: function(){
+        let isPresident = 0;
+        if (isPresident !== true) {
+            return  this.wife.name + " is not a President.";
+        }
+    },
+
+    getNumberOfChildren: function(){
+        return this.wife.name + " and I have " + this.children.length + " children.";
+    },
+
+    getFirstChildProfile: function(){
+        return this.children.first.name + " is" + " " + this.children.first.age + "years" + " and a " + this.children.first.gender + ".";
+    },
+
+    getSecondChildProfile: function(){
+        return this.children.second.name + " is" + " " + this.children.second.age + "years" + " and a " + this.children.second.gender + ".";
+    },
+
+    getThirdChildProfile: function(){
+        return this.children.third.name + " is" + " " + this.children.third.age + "years" + " and a " + this.children.third.gender + ".";
+    },
+
+    getCoupleAgeDifference: function(){
         let ageDifference = 0;
-        if (age < ageWife) {
-            ageDifference = ageWife - age;
+        if (this.age < this.wife.age) {
+            ageDifference = this.wife.age - this.age;
         } else {
-            ageDifference = age - ageWife;
+            ageDifference = this.age - this.wife.age;
         }
         
-        return this.name + " is older than " + this.wife.nameWife + " by " + ageDifference + " years.";
+        return this.name + " is older than " + this.wife.name + " by " + ageDifference + " years.";
     
     },
 
-    sumChildrenAges: function(age1, age2, age3){
+    getSumChildrenAges: function(){
         
-            ageSummation = age1 + age2 + age3;
+            ageSummation = this.children.first.age + this.children.second.age + this.children.third.age;
         
         
-        return "The sum of all " + this.name  + "'s" + " children is " + " " + ageSummation + "years."; 
+        return "The sum of all the ages of " + this.name  + "'s" + " children is " + " " + ageSummation + "years."; 
     }
     
 
 };
 
 
-
-console.log(person.wifeName());
-console.log(person.wifeAge());
-console.log(person.coupleAgeDifference(70, 60));
-console.log(person.sumChildrenAges(35, 30, 25));
+console.log(person.getMyName());
+console.log(person.getMyPoliticalStatus());
+console.log(person.getMyAge());
+console.log(person.getMyCars());
+console.log(person.getWifeName());
+console.log(person.getWifeAge());
+console.log(person.getMyWifePoliticalStatus());
+console.log(person.getNumberOfChildren());
+console.log(person.getFirstChildProfile());
+console.log(person.getSecondChildProfile());
+console.log(person.getThirdChildProfile());
+console.log(person.getCoupleAgeDifference(70, 60));
+console.log(person.getSumChildrenAges(35, 30, 25));
 
 
 
