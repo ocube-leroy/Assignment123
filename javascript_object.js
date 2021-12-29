@@ -36,11 +36,11 @@ const person = {
     age: 70, 
     cars: ["Bentley", "Benz", "Lamborgini"],
     wife: {name: "Aisha", age: 60, gender: "female", isPresident: false},
-    children: {
-        first: {name: "Goke", age: 35, gender: "male"},
-        second: {name: "Sandra", age: 30, gender: "female"},
-        third: {name: "Mudi", age: 25, gender: "male"}
-    },
+    children: [
+        {first: {name: "Goke", age: 35, gender: "male"}},
+        {second: {name: "Sandra", age: 30, gender: "female"}},
+        {third: {name: "Mudi", age: 25, gender: "male"}}
+    ],
     
 
     getMyName: function(){
@@ -49,7 +49,7 @@ const person = {
 
     getMyPoliticalStatus: function(){
         let isPresident = 0;
-        if (isPresident == true) {
+        if (isPresident !== false) {
             return "I am a President.";
         }
     },
@@ -82,15 +82,15 @@ const person = {
     },
 
     getFirstChildProfile: function(){
-        return this.children.first.name + " is" + " " + this.children.first.age + "years" + " and a " + this.children.first.gender + ".";
+        return this.children[0].first.name + " is" + " " + this.children[0].first.age + "years" + " and a " + this.children[0].first.gender + ".";
     },
 
     getSecondChildProfile: function(){
-        return this.children.second.name + " is" + " " + this.children.second.age + "years" + " and a " + this.children.second.gender + ".";
+        return this.children[1].second.name + " is" + " " + this.children[1].second.age + "years" + " and a " + this.children[1].second.gender + ".";
     },
 
     getThirdChildProfile: function(){
-        return this.children.third.name + " is" + " " + this.children.third.age + "years" + " and a " + this.children.third.gender + ".";
+        return this.children[2].third.name + " is" + " " + this.children[2].third.age + "years" + " and a " + this.children[2].third.gender + ".";
     },
 
     getCoupleAgeDifference: function(){
@@ -107,7 +107,7 @@ const person = {
 
     getSumChildrenAges: function(){
         
-            ageSummation = this.children.first.age + this.children.second.age + this.children.third.age;
+            ageSummation = this.children[0].first.age + this.children[1].second.age + this.children[2].third.age;
         
         
         return "The sum of all the ages of " + this.name  + "'s" + " children is " + " " + ageSummation + "years."; 
