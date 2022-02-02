@@ -1,0 +1,65 @@
+Hi Goke, 
+
+Welldone on this task. The page is pretty well cloned.
+
+Just a few observations
+
+##############
+1. Try and make your class names more descriptive. By this I mean, rather than use class names such as `'grid-child', 'child3', 'col3 product 1'`,
+   you may want to use class names such as 'Token', 'Account Transfers', 'SME HUB', 'Keypad' (instead of gridholder) etc. 
+
+   This makes debugging css code easier especially if one is viewing it from the chrome dev tools. I'll also advise you read up on BEM, it's not compulsory you use it but it is an advisory standard for naming CSS classes.
+
+2. I know this is a sample but avoid broken links as much as possible. Please see line 92 and 106. you can put a link to a dummy page in your anchor tag but let it never be empty.
+
+3. In your CSS, product 1, 2 and 3 seem to have the same styles, why not create just one class called products and reuse as need be. for example, I'd rewrite your product css code like this:
+
+    .product {
+    float: left;
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    width: 196px;
+    padding: 10px;
+    height: 196px;
+    margin: 0px 5px 20px 20px;
+    background-color: whitesmoke;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.product > a {
+    border: 1px solid #666666;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #666666;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+4. On line 5 - 8 on your css file, rather than give one style to multiple classes, I'd create a single class and reuse it wherever I want to. Please see what I mean below:
+
+        .text-display {
+             display: block;
+            font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        }
+
+        and if you need to use it, you can do something like this.
+
+        <div class = "gtbContainer text-display">
+            `Enter corresponding html elements here`
+        </div>
+
+5. All classes you created for the numbers of the keypad have the same style, it would be nice to create just one class and apply it for all the numbers. Something along these lines:
+    .keypad {
+        display: grid;
+        text-align: center;
+        background-color: #CCCCCC;
+        padding: 8px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        border-radius: 5px
+    }
